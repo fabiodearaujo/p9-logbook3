@@ -5,10 +5,10 @@ on:
     types: [labeled]
     
 env:
-  AZURE_RESOURCE_GROUP: cd-with-actions
-  AZURE_APP_PLAN: actions-ttt-deployment
-  AZURE_LOCATION: '"Uk West"'
-  AZURE_WEBAPP_NAME: fabio-ttt-app
+AZURE_RESOURCE_GROUP: cd-with-gactions
+  AZURE_APP_PLAN: gactions-ttt-deployment
+  AZURE_LOCATION: '"UK West"'
+  AZURE_WEBAPP_NAME: fabio-ttt-container
   
 jobs:
   setup-up-azure-resources:
