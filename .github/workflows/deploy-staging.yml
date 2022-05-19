@@ -5,9 +5,9 @@ on:
     types: [labeled]
     
 env:
-  DOCKER_IMAGE_NAME: logbook3-az-ttt
+  DOCKER_IMAGE_NAME: ttt-az-docker-fabiod
   IMAGE_REGISTRY_URL: docker.pkg.github.com
-  AZURE_WEBAPP_NAME: fabio-ttt-app
+  AZURE_WEBAPP_NAME: fabio-ttt-container
     
 jobs:
   build:
