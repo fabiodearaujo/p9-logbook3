@@ -6,7 +6,7 @@ on:
       - main
     
 env:
-  DOCKER_IMAGE_NAME: ttt-az-docker-prod
+  DOCKER_IMAGE_NAME: ttt-az-docker-fabiod
   IMAGE_REGISTRY_URL: docker.pkg.github.com
   AZURE_WEBAPP_NAME: fabio-ttt-container
     
@@ -67,8 +67,8 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{env.AZURE_WEBAPP_NAME}}
-          images: ${{env.IMAGE_REGISTRY_URL}}/${{ github.repository}}/${{env.DOCKER_IMAGE_NAME}}:${{ github.sha }}
-          # images: ${{env.IMAGE_REGISTRY_URL}}/fabiodearaujo/p9-logbook3/${{env.DOCKER_IMAGE_NAME}}:${{ github.sha }}
+          #images: ${{env.IMAGE_REGISTRY_URL}}/${{ github.repository}}/${{env.DOCKER_IMAGE_NAME}}:${{ github.sha }}
+          images: ${{env.IMAGE_REGISTRY_URL}}/fabiodearaujo/p9-logbook3/${{env.DOCKER_IMAGE_NAME}}:${{ github.sha }}
         
       - name: Azure logout
         run: |
