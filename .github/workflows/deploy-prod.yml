@@ -6,7 +6,7 @@ on:
       - main
     
 env:
-  DOCKER_IMAGE_NAME: ttt-az-docker-fabiod
+  DOCKER_IMAGE_NAME: ttt-az-docker-prod
   IMAGE_REGISTRY_URL: docker.pkg.github.com
   AZURE_WEBAPP_NAME: fabio-ttt-container
     
